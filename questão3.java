@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
-public class quest„o3 {
+public class quest√£o3 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		int matriz[][] = new int[5][5];
-		int numeroBusca;
+		int numeroBusca, w=0;
 		
 		for (int l = 0; l < 5; l++) {
 
 			for (int c = 0; c < 5; c++) {
-				System.out.println("Digite o valor da posiÁ„o linha : " + l + " coluna: " + c);
+				System.out.println("Digite o valor da posi√ß√£o linha : " + l + " coluna: " + c);
 				matriz[l][c] = in.nextInt();
 			}
 		}
 		
-		System.out.println("\nQue valor vocÍ deseja encontrar?\n");
+		System.out.println("\nQue valor voc√™ deseja encontrar?\n");
 		numeroBusca= in.nextInt();
 		
 		for (int l = 0; l < 5; l++) {
@@ -25,6 +25,9 @@ public class quest„o3 {
 				} else {}
 				
 			}
+		}
+				if (w==0) {
+			System.out.println("Valor n√£o encontrado.");
 		}
 	}
 }
